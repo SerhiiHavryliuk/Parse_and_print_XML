@@ -1,0 +1,95 @@
+/* Общее форматирование текста*/
+.doc_series, .doc_lastname, .doc_middlename, .doc_firstname, .doc_year, .doc_universityname, .doc_stypin, .doc_spec, /*.doc_qualificationname,*/ .doc_specdirprofname, .doc_educationqualificationnamerod, .doc_cvalific, .doc_bossworkpost, .doc_dategive
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10pt; /* Размер шрифта в пунктах */
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+.doc_series
+{
+    margin-top: 90px;/* отступ сверху */
+    font-weight: bold;
+    font-size: 12pt;
+}
+
+.doc_lastname
+{
+    margin-top: 2px;
+
+    font-style: italic; /* начертание шрифта курсивное*/
+    text-transform: uppercase; /* прописной текс (верхний регистр */
+    font-weight: bold; /* жырный шрифт */
+}
+.doc_firstname
+{
+    margin-top: 2px;
+    font-weight: bold;
+}
+.doc_middlename
+{
+    margin-top: 2px;
+    font-weight: bold;
+}
+.doc_year
+{
+    margin-top: 10px;
+}
+
+.doc_universityname
+{
+    margin-top: 2px;
+    font-weight: bold;
+}
+.doc_stypin
+{
+    margin-top: 2px;
+}
+.doc_spec
+{
+    margin-top: 2px;
+}
+/*  .doc_qualificationname
+  {
+      margin-top: 10px;
+      margin-left: 300px;
+  }*/
+.doc_specdirprofname
+{
+    margin-top: 2px;
+}
+.doc_educationqualificationnamerod
+{
+    margin-top: 2px;
+}
+.doc_cvalific
+{
+    margin-top: 2px;
+}
+.doc_bossworkpost
+{
+    font-size: 8pt; /* Размер шрифта в пунктах */
+    font-style: italic;
+    margin-top: 50px;
+    font-weight: bold;
+    text-align: left;
+}
+.doc_dategive
+{
+    font-size: 8pt; /* Размер шрифта в пунктах */
+    font-style: italic;
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: right;
+}
+
+
+
+/*Добавляет разрыв страницы при печати документа после заданного элемента.*/
+@media print {
+    .doc_dategive {
+        page-break-after: always;
+    }
+}
